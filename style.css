@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    background-color: rgb(217, 243, 243);
+}
+
+#course{
+    display: flex;
+    justify-content: center;
+}
+
+#buy, #sale{
+    margin: 20px;
+}
+
+.input_select{
+    margin: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PB_API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Курси валют PrivatBank API</h1>
+    <div>
+        <div id="course">
+            <div id="buy">
+                <h2>Покупка</h2>
+                <div id="buy_exchangeRate">
+                    <p id="buy_usd"></p>
+                    <p id="buy_eur"></p>
+                    <p id="buy_rur"></p>
+                </div>
+            </div>
+            <div id="sale">
+                <h2>Продажа</h2>
+                <div id="sale_exchangeRate">
+                    <p id="sale_usd"></p>
+                    <p id="sale_eur"></p>
+                    <p id="sale_rur"></p>
+                </div>
+            </div>
+        </div>
+        <div class="input_select">
+            <input type="number" id="sale_input" placeholder="введіть суму">
+            <select id="sale_input_select">
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUR">RUR</option>
+            </select>
+        </div>
+        <button id="button">Обрахувати</button>
+        <div class="input_select">
+            <input type="number" id="buy_readonly" placeholder="обрахована сума" readonly>
+            <select id="buy_input_select">
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUR">RUR</option>
+            </select>
+        </div>
+        <p>При переведені євро в доллари (та їм подібні операції), спершу євро переводить в гривні а тоді гривні в
+            доллари</p>
+    </div>
+
+    <script src="pbAPI.js"></script>
+</body>
+
+</html>
